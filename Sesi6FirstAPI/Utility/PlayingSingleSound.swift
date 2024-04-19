@@ -7,6 +7,7 @@
 
 import Foundation
 import AVFoundation
+import UIKit
 
 var audioPlayer: AVAudioPlayer?
 
@@ -19,4 +20,18 @@ func playSingleSound(sound: String, type: String) {
       print("Could not find and play the sound file.")
     }
   }
+}
+
+func playSound(soundName: String) {
+    guard let soundFile = NSDataAsset(name: soundName) else {
+        print("Could not read file named \(soundName)")
+        return
+    }
+    
+    do {
+        audioPlayer = try AVAudioPlayer(data: soundFile.data)
+        audioPlayer?.play()
+    } catch {
+        print("ERROR: \(error.localizedDescription) sreating audio player")
+    }
 }

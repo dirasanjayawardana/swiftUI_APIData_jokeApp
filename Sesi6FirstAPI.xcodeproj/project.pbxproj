@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		52C9927F2BD209FB00CFB41A /* SETUP.md in Resources */ = {isa = PBXBuildFile; fileRef = 52C9927E2BD209FB00CFB41A /* SETUP.md */; };
+		52C992822BD20BF300CFB41A /* Joke.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C992812BD20BF300CFB41A /* Joke.swift */; };
+		52C992852BD20CAA00CFB41A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C992842BD20CAA00CFB41A /* Constants.swift */; };
+		52C992882BD20E8900CFB41A /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C992872BD20E8900CFB41A /* APIService.swift */; };
+		52C9928B2BD218AB00CFB41A /* JokeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52C9928A2BD218AB00CFB41A /* JokeViewModel.swift */; };
 		533FAC1C2B662BE20051C236 /* Sesi6FirstAPIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533FAC1B2B662BE20051C236 /* Sesi6FirstAPIApp.swift */; };
 		533FAC1E2B662BE20051C236 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533FAC1D2B662BE20051C236 /* CardView.swift */; };
 		533FAC202B662BE50051C236 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533FAC1F2B662BE50051C236 /* Assets.xcassets */; };
@@ -21,6 +25,10 @@
 
 /* Begin PBXFileReference section */
 		52C9927E2BD209FB00CFB41A /* SETUP.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SETUP.md; sourceTree = "<group>"; };
+		52C992812BD20BF300CFB41A /* Joke.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Joke.swift; sourceTree = "<group>"; };
+		52C992842BD20CAA00CFB41A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		52C992872BD20E8900CFB41A /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		52C9928A2BD218AB00CFB41A /* JokeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeViewModel.swift; sourceTree = "<group>"; };
 		533FAC182B662BE20051C236 /* Sesi6FirstAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sesi6FirstAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		533FAC1B2B662BE20051C236 /* Sesi6FirstAPIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sesi6FirstAPIApp.swift; sourceTree = "<group>"; };
 		533FAC1D2B662BE20051C236 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
@@ -45,6 +53,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		52C992802BD20BD600CFB41A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				52C992812BD20BF300CFB41A /* Joke.swift */,
+				52C992842BD20CAA00CFB41A /* Constants.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52C992832BD20C9400CFB41A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				533FAC2D2B662D690051C236 /* Component */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		52C992862BD20E6600CFB41A /* Sevices */ = {
+			isa = PBXGroup;
+			children = (
+				52C992872BD20E8900CFB41A /* APIService.swift */,
+			);
+			path = Sevices;
+			sourceTree = "<group>";
+		};
+		52C992892BD2180D00CFB41A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				52C9928A2BD218AB00CFB41A /* JokeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		533FAC0F2B662BE20051C236 = {
 			isa = PBXGroup;
 			children = (
@@ -65,9 +106,12 @@
 		533FAC1A2B662BE20051C236 /* Sesi6FirstAPI */ = {
 			isa = PBXGroup;
 			children = (
+				52C992892BD2180D00CFB41A /* ViewModel */,
+				52C992862BD20E6600CFB41A /* Sevices */,
+				52C992802BD20BD600CFB41A /* Model */,
 				533FAC342B6630170051C236 /* Info.plist */,
 				533FAC392B663ADE0051C236 /* Utility */,
-				533FAC2D2B662D690051C236 /* Component */,
+				52C992832BD20C9400CFB41A /* View */,
 				533FAC2C2B662D600051C236 /* App */,
 				533FAC2B2B662D580051C236 /* Resources */,
 				533FAC212B662BE50051C236 /* Preview Content */,
@@ -209,9 +253,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				533FAC312B662E460051C236 /* SplashScreen.swift in Sources */,
+				52C9928B2BD218AB00CFB41A /* JokeViewModel.swift in Sources */,
 				533FAC1E2B662BE20051C236 /* CardView.swift in Sources */,
+				52C992822BD20BF300CFB41A /* Joke.swift in Sources */,
 				533FAC3B2B663AF40051C236 /* PlayingSingleSound.swift in Sources */,
+				52C992852BD20CAA00CFB41A /* Constants.swift in Sources */,
 				533FAC1C2B662BE20051C236 /* Sesi6FirstAPIApp.swift in Sources */,
+				52C992882BD20E8900CFB41A /* APIService.swift in Sources */,
 				533FAC362B6630FF0051C236 /* ViewCoordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
